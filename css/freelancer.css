@@ -9706,16 +9706,16 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .masthead .masthead-heading {
-  font-size: 2.75rem;
+  font-size: 1.6rem;
   line-height: 2.75rem;
 }
 
 .masthead .masthead-subheading {
-  font-size: 1.25rem;
+  font-size: .8rem;
 }
 
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 10rem;
 }
 
 @media (min-width: 992px) {
