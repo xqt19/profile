@@ -86,8 +86,26 @@ var elementsToShow = document.querySelectorAll('.col-md-6');
 var mastheadavatar = document.querySelectorAll('.masthead-avatar');
 var topstar = document.querySelectorAll('#topstar');
 var gradcap = document.querySelectorAll('#gradcap');
+var education = document.querySelectorAll('#education');
+var workexperience = document.querySelectorAll('#workexperience');
 
 function loop() {
+
+    Array.prototype.forEach.call(education, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('slideInLeft');
+      } else {
+        element.classList.remove('slideInLeft');
+      }
+    });
+
+    Array.prototype.forEach.call(workexperience, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('slideInRight');
+      } else {
+        element.classList.remove('slideInRight');
+      }
+    });
 
     Array.prototype.forEach.call(gradcap, function(element){
       if (isElementInViewport(element)) {
