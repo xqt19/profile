@@ -19,10 +19,20 @@ document.addEventListener("keyup", (event) => {
   }
   if (index1 === 10) {
     alert("The race is over! Player 1 has won!");
-    window.location.reload(true);
+    player1.querySelectorAll("td")[index1].classList.remove('active');
+    player2.querySelectorAll("td")[index2].classList.remove('active');
+    index1 = 0;
+    index2 = 0;
+    player1.querySelectorAll("td")[index1].classList.add('active');
+    player2.querySelectorAll("td")[index2].classList.add('active');
   }
   if (index2 === 10) {
     alert("The race is over! Player 2 has won!");
-    window.location.reload(true);
+    player1.querySelectorAll("td")[index1].classList.remove('active');
+    player2.querySelectorAll("td")[index2].classList.remove('active');
+    index1 = 0;
+    index2 = 0;
+    player1.querySelectorAll("td")[index1].classList.add('active');
+    player2.querySelectorAll("td")[index2].classList.add('active');
   }
 });
