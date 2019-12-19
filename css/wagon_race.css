@@ -1,0 +1,21 @@
+.racer_table td {
+  height: 40px;
+  width: 40px;
+  border: 1px solid ;
+}
+.racer_table td.active {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#player1_race td.active {
+  background-image: url("../img/wagon_race/player_1.png");
+}
+#player2_race td.active {
+  background-image: url("../img/wagon_race/player_2.png");
+}
+
+td.finish{
+  background-image: url("../img/wagon_race/finish.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
