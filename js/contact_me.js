@@ -84,8 +84,26 @@ var scroll = window.requestAnimationFrame ||
              function(callback){ window.setTimeout(callback, 1000/60)};
 var elementsToShow = document.querySelectorAll('.col-md-6');
 var mastheadavatar = document.querySelectorAll('.masthead-avatar');
+var topstar = document.querySelectorAll('#topstar');
+var gradcap = document.querySelectorAll('#gradcap');
 
 function loop() {
+
+    Array.prototype.forEach.call(gradcap, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('slideInRight');
+      } else {
+        element.classList.remove('slideInRight');
+      }
+    });
+
+    Array.prototype.forEach.call(topstar, function(element){
+      if (isElementInViewport(element)) {
+        element.classList.add('slideInLeft');
+      } else {
+        element.classList.remove('slideInLeft');
+      }
+    });
 
     Array.prototype.forEach.call(mastheadavatar, function(element){
       if (isElementInViewport(element)) {
