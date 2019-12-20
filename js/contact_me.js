@@ -93,41 +93,41 @@ function loop() {
 
     Array.prototype.forEach.call(education, function(element){
       if (isElementInViewport(element)) {
-        element.classList.add('slideInLeft');
+        element.classList.add('zoomIn');
       } else {
-        element.classList.remove('slideInLeft');
+        element.classList.remove('zoomIn');
       }
     });
 
     Array.prototype.forEach.call(workexperience, function(element){
       if (isElementInViewport(element)) {
-        element.classList.add('slideInRight');
+        element.classList.add('zoomIn');
       } else {
-        element.classList.remove('slideInRight');
+        element.classList.remove('zoomIn');
       }
     });
 
     Array.prototype.forEach.call(gradcap, function(element){
       if (isElementInViewport(element)) {
-        element.classList.add('slideInRight');
+        element.classList.add('tada');
       } else {
-        element.classList.remove('slideInRight');
+        element.classList.remove('tada');
       }
     });
 
     Array.prototype.forEach.call(topstar, function(element){
       if (isElementInViewport(element)) {
-        element.classList.add('slideInLeft');
+        element.classList.add('tada');
       } else {
-        element.classList.remove('slideInLeft');
+        element.classList.remove('tada');
       }
     });
 
     Array.prototype.forEach.call(mastheadavatar, function(element){
       if (isElementInViewport(element)) {
-        element.classList.add('bounceInRight');
+        element.classList.add('bounceIn');
       } else {
-        element.classList.remove('bounceInRight');
+        element.classList.remove('bounceIn');
       }
     });
 
