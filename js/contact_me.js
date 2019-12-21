@@ -82,7 +82,7 @@ $('#name').focus(function() {
 var scroll = window.requestAnimationFrame ||
              // IE Fallback
              function(callback){ window.setTimeout(callback, 1000/60)};
-var elementsToShow = document.querySelectorAll('.col-md-6');
+var elementsToShow = document.querySelectorAll('.skillpic');
 var mastheadavatar = document.querySelectorAll('.masthead-avatar');
 var topstar = document.querySelectorAll('#topstar');
 var gradcap = document.querySelectorAll('#gradcap');
@@ -133,10 +133,8 @@ function loop() {
 
     Array.prototype.forEach.call(elementsToShow, function(element){
       if (isElementInViewport(element)) {
-        element.classList.add('animated');
         element.classList.add('bounceIn');
       } else {
-        element.classList.remove('animated');
         element.classList.remove('bounceIn');
       }
     });
